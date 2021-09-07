@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderItemStatusAcknowledgementStatus Class Doc Comment
  *
  * @category Class
  * @description Acknowledgement status information.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +60,9 @@ class OrderItemStatusAcknowledgementStatus implements ModelInterface, ArrayAcces
       */
     protected static $swaggerTypes = [
         'confirmation_status' => 'string',
-        'accepted_quantity' => '\Swagger\Client\Model\ItemQuantity',
-        'rejected_quantity' => '\Swagger\Client\Model\ItemQuantity',
-        'acknowledgement_status_details' => '\Swagger\Client\Model\AcknowledgementStatusDetails[]'
+        'accepted_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity',
+        'rejected_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity',
+        'acknowledgement_status_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\AcknowledgementStatusDetails[]'
     ];
 
     /**
@@ -286,7 +287,7 @@ class OrderItemStatusAcknowledgementStatus implements ModelInterface, ArrayAcces
     /**
      * Gets accepted_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getAcceptedQuantity()
     {
@@ -296,7 +297,7 @@ class OrderItemStatusAcknowledgementStatus implements ModelInterface, ArrayAcces
     /**
      * Sets accepted_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $accepted_quantity Item quantities accepted by vendor to be shipped.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $accepted_quantity Item quantities accepted by vendor to be shipped.
      *
      * @return $this
      */
@@ -310,7 +311,7 @@ class OrderItemStatusAcknowledgementStatus implements ModelInterface, ArrayAcces
     /**
      * Gets rejected_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getRejectedQuantity()
     {
@@ -320,7 +321,7 @@ class OrderItemStatusAcknowledgementStatus implements ModelInterface, ArrayAcces
     /**
      * Sets rejected_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $rejected_quantity Item quantities rejected by vendor.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $rejected_quantity Item quantities rejected by vendor.
      *
      * @return $this
      */
@@ -334,7 +335,7 @@ class OrderItemStatusAcknowledgementStatus implements ModelInterface, ArrayAcces
     /**
      * Gets acknowledgement_status_details
      *
-     * @return \Swagger\Client\Model\AcknowledgementStatusDetails[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\AcknowledgementStatusDetails[]
      */
     public function getAcknowledgementStatusDetails()
     {
@@ -344,7 +345,7 @@ class OrderItemStatusAcknowledgementStatus implements ModelInterface, ArrayAcces
     /**
      * Sets acknowledgement_status_details
      *
-     * @param \Swagger\Client\Model\AcknowledgementStatusDetails[] $acknowledgement_status_details Details of item quantity confirmed.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\AcknowledgementStatusDetails[] $acknowledgement_status_details Details of item quantity confirmed.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderListStatus Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +58,8 @@ class OrderListStatus implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pagination' => '\Swagger\Client\Model\Pagination',
-        'orders_status' => '\Swagger\Client\Model\OrderStatus[]'
+        'pagination' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Pagination',
+        'orders_status' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderStatus[]'
     ];
 
     /**
@@ -213,7 +214,7 @@ class OrderListStatus implements ModelInterface, ArrayAccess
     /**
      * Gets pagination
      *
-     * @return \Swagger\Client\Model\Pagination
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Pagination
      */
     public function getPagination()
     {
@@ -223,7 +224,7 @@ class OrderListStatus implements ModelInterface, ArrayAccess
     /**
      * Sets pagination
      *
-     * @param \Swagger\Client\Model\Pagination $pagination pagination
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Pagination $pagination pagination
      *
      * @return $this
      */
@@ -237,7 +238,7 @@ class OrderListStatus implements ModelInterface, ArrayAccess
     /**
      * Gets orders_status
      *
-     * @return \Swagger\Client\Model\OrderStatus[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderStatus[]
      */
     public function getOrdersStatus()
     {
@@ -247,7 +248,7 @@ class OrderListStatus implements ModelInterface, ArrayAccess
     /**
      * Sets orders_status
      *
-     * @param \Swagger\Client\Model\OrderStatus[] $orders_status orders_status
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderStatus[] $orders_status orders_status
      *
      * @return $this
      */

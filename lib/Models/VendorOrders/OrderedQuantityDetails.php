@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderedQuantityDetails Class Doc Comment
  *
  * @category Class
  * @description Details of item quantity ordered
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +60,8 @@ class OrderedQuantityDetails implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'updated_date' => '\DateTime',
-        'ordered_quantity' => '\Swagger\Client\Model\ItemQuantity',
-        'cancelled_quantity' => '\Swagger\Client\Model\ItemQuantity'
+        'ordered_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity',
+        'cancelled_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity'
     ];
 
     /**
@@ -244,7 +245,7 @@ class OrderedQuantityDetails implements ModelInterface, ArrayAccess
     /**
      * Gets ordered_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getOrderedQuantity()
     {
@@ -254,7 +255,7 @@ class OrderedQuantityDetails implements ModelInterface, ArrayAccess
     /**
      * Sets ordered_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $ordered_quantity Item quantity ordered.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $ordered_quantity Item quantity ordered.
      *
      * @return $this
      */
@@ -268,7 +269,7 @@ class OrderedQuantityDetails implements ModelInterface, ArrayAccess
     /**
      * Gets cancelled_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getCancelledQuantity()
     {
@@ -278,7 +279,7 @@ class OrderedQuantityDetails implements ModelInterface, ArrayAccess
     /**
      * Sets cancelled_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $cancelled_quantity Item quantity ordered.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $cancelled_quantity Item quantity ordered.
      *
      * @return $this
      */

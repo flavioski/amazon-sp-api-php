@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderAcknowledgement Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +59,9 @@ class OrderAcknowledgement implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\Swagger\Client\Model\PartyIdentification',
+        'selling_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification',
         'acknowledgement_date' => '\DateTime',
-        'items' => '\Swagger\Client\Model\OrderAcknowledgementItem[]'
+        'items' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderAcknowledgementItem[]'
     ];
 
     /**
@@ -261,7 +262,7 @@ class OrderAcknowledgement implements ModelInterface, ArrayAccess
     /**
      * Gets selling_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -271,7 +272,7 @@ class OrderAcknowledgement implements ModelInterface, ArrayAccess
     /**
      * Sets selling_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $selling_party Name, address and tax details of the party receiving a shipment of products.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification $selling_party Name, address and tax details of the party receiving a shipment of products.
      *
      * @return $this
      */
@@ -309,7 +310,7 @@ class OrderAcknowledgement implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\OrderAcknowledgementItem[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderAcknowledgementItem[]
      */
     public function getItems()
     {
@@ -319,7 +320,7 @@ class OrderAcknowledgement implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\OrderAcknowledgementItem[] $items A list of the items being acknowledged with associated details.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderAcknowledgementItem[] $items A list of the items being acknowledged with associated details.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderAcknowledgementItem Class Doc Comment
  *
  * @category Class
  * @description Details of the item being acknowledged.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,11 +62,11 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'ordered_quantity' => '\Swagger\Client\Model\ItemQuantity',
-        'net_cost' => '\Swagger\Client\Model\Money',
-        'list_price' => '\Swagger\Client\Model\Money',
+        'ordered_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity',
+        'net_cost' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money',
+        'list_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money',
         'discount_multiplier' => 'string',
-        'item_acknowledgements' => '\Swagger\Client\Model\OrderItemAcknowledgement[]'
+        'item_acknowledgements' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemAcknowledgement[]'
     ];
 
     /**
@@ -331,7 +332,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets ordered_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getOrderedQuantity()
     {
@@ -341,7 +342,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets ordered_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $ordered_quantity The quantity of this item ordered.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $ordered_quantity The quantity of this item ordered.
      *
      * @return $this
      */
@@ -355,7 +356,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets net_cost
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money
      */
     public function getNetCost()
     {
@@ -365,7 +366,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets net_cost
      *
-     * @param \Swagger\Client\Model\Money $net_cost The cost to Amazon, which should match the cost on the invoice. This is a required field. If this is left blank the file will reject in Amazon systems. Price information should not be zero or negative. Indicates a net unit price.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money $net_cost The cost to Amazon, which should match the cost on the invoice. This is a required field. If this is left blank the file will reject in Amazon systems. Price information should not be zero or negative. Indicates a net unit price.
      *
      * @return $this
      */
@@ -379,7 +380,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets list_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money
      */
     public function getListPrice()
     {
@@ -389,7 +390,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets list_price
      *
-     * @param \Swagger\Client\Model\Money $list_price The list price. This is required only if a vendor sells books with a list price.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money $list_price The list price. This is required only if a vendor sells books with a list price.
      *
      * @return $this
      */
@@ -427,7 +428,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets item_acknowledgements
      *
-     * @return \Swagger\Client\Model\OrderItemAcknowledgement[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemAcknowledgement[]
      */
     public function getItemAcknowledgements()
     {
@@ -437,7 +438,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets item_acknowledgements
      *
-     * @param \Swagger\Client\Model\OrderItemAcknowledgement[] $item_acknowledgements This is used to indicate acknowledged quantity.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemAcknowledgement[] $item_acknowledgements This is used to indicate acknowledged quantity.
      *
      * @return $this
      */

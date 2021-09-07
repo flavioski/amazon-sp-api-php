@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderDetails Class Doc Comment
  *
  * @category Class
  * @description Details of an order.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,16 +63,16 @@ class OrderDetails implements ModelInterface, ArrayAccess
         'purchase_order_changed_date' => '\DateTime',
         'purchase_order_state_changed_date' => '\DateTime',
         'purchase_order_type' => 'string',
-        'import_details' => '\Swagger\Client\Model\ImportDetails',
+        'import_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ImportDetails',
         'deal_code' => 'string',
         'payment_method' => 'string',
-        'buying_party' => '\Swagger\Client\Model\PartyIdentification',
-        'selling_party' => '\Swagger\Client\Model\PartyIdentification',
-        'ship_to_party' => '\Swagger\Client\Model\PartyIdentification',
-        'bill_to_party' => '\Swagger\Client\Model\PartyIdentification',
-        'ship_window' => '\Swagger\Client\Model\DateTimeInterval',
-        'delivery_window' => '\Swagger\Client\Model\DateTimeInterval',
-        'items' => '\Swagger\Client\Model\OrderItem[]'
+        'buying_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification',
+        'selling_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification',
+        'ship_to_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification',
+        'bill_to_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification',
+        'ship_window' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\DateTimeInterval',
+        'delivery_window' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\DateTimeInterval',
+        'items' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItem[]'
     ];
 
     /**
@@ -454,7 +455,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets import_details
      *
-     * @return \Swagger\Client\Model\ImportDetails
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ImportDetails
      */
     public function getImportDetails()
     {
@@ -464,7 +465,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets import_details
      *
-     * @param \Swagger\Client\Model\ImportDetails $import_details If the purchase order is an import order, the details for the import order.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ImportDetails $import_details If the purchase order is an import order, the details for the import order.
      *
      * @return $this
      */
@@ -535,7 +536,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets buying_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification
      */
     public function getBuyingParty()
     {
@@ -545,7 +546,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets buying_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $buying_party Name/Address and tax details of the buying party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification $buying_party Name/Address and tax details of the buying party.
      *
      * @return $this
      */
@@ -559,7 +560,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets selling_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -569,7 +570,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets selling_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $selling_party Name/Address and tax details of the selling party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification $selling_party Name/Address and tax details of the selling party.
      *
      * @return $this
      */
@@ -583,7 +584,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets ship_to_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification
      */
     public function getShipToParty()
     {
@@ -593,7 +594,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets ship_to_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $ship_to_party Name/Address and tax details of the ship to party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification $ship_to_party Name/Address and tax details of the ship to party.
      *
      * @return $this
      */
@@ -607,7 +608,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets bill_to_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification
      */
     public function getBillToParty()
     {
@@ -617,7 +618,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets bill_to_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $bill_to_party Name/Address and tax details of the bill to party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification $bill_to_party Name/Address and tax details of the bill to party.
      *
      * @return $this
      */
@@ -631,7 +632,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets ship_window
      *
-     * @return \Swagger\Client\Model\DateTimeInterval
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\DateTimeInterval
      */
     public function getShipWindow()
     {
@@ -641,7 +642,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets ship_window
      *
-     * @param \Swagger\Client\Model\DateTimeInterval $ship_window This indicates the ship window. Format is start and end date separated by double hyphen (--). For example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\DateTimeInterval $ship_window This indicates the ship window. Format is start and end date separated by double hyphen (--). For example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
      *
      * @return $this
      */
@@ -655,7 +656,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_window
      *
-     * @return \Swagger\Client\Model\DateTimeInterval
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\DateTimeInterval
      */
     public function getDeliveryWindow()
     {
@@ -665,7 +666,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_window
      *
-     * @param \Swagger\Client\Model\DateTimeInterval $delivery_window This indicates the delivery window. Format is start and end date separated by double hyphen (--). For example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\DateTimeInterval $delivery_window This indicates the delivery window. Format is start and end date separated by double hyphen (--). For example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
      *
      * @return $this
      */
@@ -679,7 +680,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\OrderItem[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItem[]
      */
     public function getItems()
     {
@@ -689,7 +690,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\OrderItem[] $items A list of items in this purchase order.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItem[] $items A list of items in this purchase order.
      *
      * @return $this
      */

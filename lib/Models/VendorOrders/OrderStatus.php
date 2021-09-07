@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderStatus Class Doc Comment
  *
  * @category Class
  * @description Current status of a purchase order.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,9 +63,9 @@ class OrderStatus implements ModelInterface, ArrayAccess
         'purchase_order_status' => 'string',
         'purchase_order_date' => '\DateTime',
         'last_updated_date' => '\DateTime',
-        'selling_party' => '\Swagger\Client\Model\PartyIdentification',
-        'ship_to_party' => '\Swagger\Client\Model\PartyIdentification',
-        'item_status' => '\Swagger\Client\Model\ItemStatus'
+        'selling_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification',
+        'ship_to_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification',
+        'item_status' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemStatus'
     ];
 
     /**
@@ -390,7 +391,7 @@ class OrderStatus implements ModelInterface, ArrayAccess
     /**
      * Gets selling_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -400,7 +401,7 @@ class OrderStatus implements ModelInterface, ArrayAccess
     /**
      * Sets selling_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $selling_party Name/Address and tax details of the selling party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification $selling_party Name/Address and tax details of the selling party.
      *
      * @return $this
      */
@@ -414,7 +415,7 @@ class OrderStatus implements ModelInterface, ArrayAccess
     /**
      * Gets ship_to_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification
      */
     public function getShipToParty()
     {
@@ -424,7 +425,7 @@ class OrderStatus implements ModelInterface, ArrayAccess
     /**
      * Sets ship_to_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $ship_to_party Name/Address and tax details of the ship to party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\PartyIdentification $ship_to_party Name/Address and tax details of the ship to party.
      *
      * @return $this
      */
@@ -438,7 +439,7 @@ class OrderStatus implements ModelInterface, ArrayAccess
     /**
      * Gets item_status
      *
-     * @return \Swagger\Client\Model\ItemStatus
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemStatus
      */
     public function getItemStatus()
     {
@@ -448,7 +449,7 @@ class OrderStatus implements ModelInterface, ArrayAccess
     /**
      * Sets item_status
      *
-     * @param \Swagger\Client\Model\ItemStatus $item_status Detailed order status.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemStatus $item_status Detailed order status.
      *
      * @return $this
      */

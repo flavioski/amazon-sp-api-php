@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderList Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +58,8 @@ class OrderList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pagination' => '\Swagger\Client\Model\Pagination',
-        'orders' => '\Swagger\Client\Model\Order[]'
+        'pagination' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Pagination',
+        'orders' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Order[]'
     ];
 
     /**
@@ -213,7 +214,7 @@ class OrderList implements ModelInterface, ArrayAccess
     /**
      * Gets pagination
      *
-     * @return \Swagger\Client\Model\Pagination
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Pagination
      */
     public function getPagination()
     {
@@ -223,7 +224,7 @@ class OrderList implements ModelInterface, ArrayAccess
     /**
      * Sets pagination
      *
-     * @param \Swagger\Client\Model\Pagination $pagination pagination
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Pagination $pagination pagination
      *
      * @return $this
      */
@@ -237,7 +238,7 @@ class OrderList implements ModelInterface, ArrayAccess
     /**
      * Gets orders
      *
-     * @return \Swagger\Client\Model\Order[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Order[]
      */
     public function getOrders()
     {
@@ -247,7 +248,7 @@ class OrderList implements ModelInterface, ArrayAccess
     /**
      * Sets orders
      *
-     * @param \Swagger\Client\Model\Order[] $orders orders
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Order[] $orders orders
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderItemStatus Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +61,10 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'net_cost' => '\Swagger\Client\Model\Money',
-        'list_price' => '\Swagger\Client\Model\Money',
-        'ordered_quantity' => '\Swagger\Client\Model\OrderItemStatusOrderedQuantity',
-        'acknowledgement_status' => '\Swagger\Client\Model\OrderItemStatusAcknowledgementStatus'
+        'net_cost' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money',
+        'list_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money',
+        'ordered_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemStatusOrderedQuantity',
+        'acknowledgement_status' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemStatusAcknowledgementStatus'
     ];
 
     /**
@@ -318,7 +319,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Gets net_cost
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money
      */
     public function getNetCost()
     {
@@ -328,7 +329,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Sets net_cost
      *
-     * @param \Swagger\Client\Model\Money $net_cost The net cost to Amazon each (cost).
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money $net_cost The net cost to Amazon each (cost).
      *
      * @return $this
      */
@@ -342,7 +343,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Gets list_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money
      */
     public function getListPrice()
     {
@@ -352,7 +353,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Sets list_price
      *
-     * @param \Swagger\Client\Model\Money $list_price The list Price to Amazon each (list).
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money $list_price The list Price to Amazon each (list).
      *
      * @return $this
      */
@@ -366,7 +367,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Gets ordered_quantity
      *
-     * @return \Swagger\Client\Model\OrderItemStatusOrderedQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemStatusOrderedQuantity
      */
     public function getOrderedQuantity()
     {
@@ -376,7 +377,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Sets ordered_quantity
      *
-     * @param \Swagger\Client\Model\OrderItemStatusOrderedQuantity $ordered_quantity ordered_quantity
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemStatusOrderedQuantity $ordered_quantity ordered_quantity
      *
      * @return $this
      */
@@ -390,7 +391,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Gets acknowledgement_status
      *
-     * @return \Swagger\Client\Model\OrderItemStatusAcknowledgementStatus
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemStatusAcknowledgementStatus
      */
     public function getAcknowledgementStatus()
     {
@@ -400,7 +401,7 @@ class OrderItemStatus implements ModelInterface, ArrayAccess
     /**
      * Sets acknowledgement_status
      *
-     * @param \Swagger\Client\Model\OrderItemStatusAcknowledgementStatus $acknowledgement_status acknowledgement_status
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderItemStatusAcknowledgementStatus $acknowledgement_status acknowledgement_status
      *
      * @return $this
      */

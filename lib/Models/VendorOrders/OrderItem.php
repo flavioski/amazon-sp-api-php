@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderItem Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +61,10 @@ class OrderItem implements ModelInterface, ArrayAccess
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'ordered_quantity' => '\Swagger\Client\Model\ItemQuantity',
+        'ordered_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity',
         'is_back_order_allowed' => 'bool',
-        'net_cost' => '\Swagger\Client\Model\Money',
-        'list_price' => '\Swagger\Client\Model\Money'
+        'net_cost' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money',
+        'list_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money'
     ];
 
     /**
@@ -324,7 +325,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets ordered_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getOrderedQuantity()
     {
@@ -334,7 +335,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets ordered_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $ordered_quantity Item quantity ordered.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $ordered_quantity Item quantity ordered.
      *
      * @return $this
      */
@@ -372,7 +373,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets net_cost
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money
      */
     public function getNetCost()
     {
@@ -382,7 +383,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets net_cost
      *
-     * @param \Swagger\Client\Model\Money $net_cost The price to Amazon each (cost).
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money $net_cost The price to Amazon each (cost).
      *
      * @return $this
      */
@@ -396,7 +397,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets list_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money
      */
     public function getListPrice()
     {
@@ -406,7 +407,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets list_price
      *
-     * @param \Swagger\Client\Model\Money $list_price The price to Amazon each (list).
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Money $list_price The price to Amazon each (list).
      *
      * @return $this
      */
