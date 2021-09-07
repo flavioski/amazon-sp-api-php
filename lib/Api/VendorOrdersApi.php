@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,24 +26,25 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ClouSale\AmazonSellingPartnerAPI\Api;
 
+use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ClouSale\AmazonSellingPartnerAPI\ApiException;
+use ClouSale\AmazonSellingPartnerAPI\Configuration;
+use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * VendorOrdersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +93,9 @@ class VendorOrdersApi
      *
      * @param  string $purchase_order_number The purchase order identifier for the order that you want. Formatting Notes: 8-character alpha-numeric code. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetPurchaseOrderResponse
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse
      */
     public function getPurchaseOrder($purchase_order_number)
     {
@@ -107,13 +108,13 @@ class VendorOrdersApi
      *
      * @param  string $purchase_order_number The purchase order identifier for the order that you want. Formatting Notes: 8-character alpha-numeric code. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetPurchaseOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPurchaseOrderWithHttpInfo($purchase_order_number)
     {
-        $returnType = '\Swagger\Client\Model\GetPurchaseOrderResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse';
         $request = $this->getPurchaseOrderRequest($purchase_order_number);
 
         try {
@@ -165,7 +166,7 @@ class VendorOrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -173,7 +174,7 @@ class VendorOrdersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -181,7 +182,7 @@ class VendorOrdersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +190,7 @@ class VendorOrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -197,7 +198,7 @@ class VendorOrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -205,7 +206,7 @@ class VendorOrdersApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -213,7 +214,7 @@ class VendorOrdersApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -221,7 +222,7 @@ class VendorOrdersApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -229,7 +230,7 @@ class VendorOrdersApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrderResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +272,7 @@ class VendorOrdersApi
      */
     public function getPurchaseOrderAsyncWithHttpInfo($purchase_order_number)
     {
-        $returnType = '\Swagger\Client\Model\GetPurchaseOrderResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrderResponse';
         $request = $this->getPurchaseOrderRequest($purchase_order_number);
 
         return $this->client
@@ -432,9 +433,9 @@ class VendorOrdersApi
      * @param  string $purchase_order_state Filters purchase orders based on the purchase order state. (optional)
      * @param  string $ordering_vendor_code Filters purchase orders based on the specified ordering vendor code. This value should be same as &#39;sellingParty.partyId&#39; in the purchase order. If not included in the filter, all purchase orders for all of the vendor codes that exist in the vendor group used to authorize the API client application are returned. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetPurchaseOrdersResponse
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse
      */
     public function getPurchaseOrders($limit = null, $created_after = null, $created_before = null, $sort_order = null, $next_token = null, $include_details = null, $changed_after = null, $changed_before = null, $po_item_state = null, $is_po_changed = null, $purchase_order_state = null, $ordering_vendor_code = null)
     {
@@ -458,13 +459,13 @@ class VendorOrdersApi
      * @param  string $purchase_order_state Filters purchase orders based on the purchase order state. (optional)
      * @param  string $ordering_vendor_code Filters purchase orders based on the specified ordering vendor code. This value should be same as &#39;sellingParty.partyId&#39; in the purchase order. If not included in the filter, all purchase orders for all of the vendor codes that exist in the vendor group used to authorize the API client application are returned. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetPurchaseOrdersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPurchaseOrdersWithHttpInfo($limit = null, $created_after = null, $created_before = null, $sort_order = null, $next_token = null, $include_details = null, $changed_after = null, $changed_before = null, $po_item_state = null, $is_po_changed = null, $purchase_order_state = null, $ordering_vendor_code = null)
     {
-        $returnType = '\Swagger\Client\Model\GetPurchaseOrdersResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse';
         $request = $this->getPurchaseOrdersRequest($limit, $created_after, $created_before, $sort_order, $next_token, $include_details, $changed_after, $changed_before, $po_item_state, $is_po_changed, $purchase_order_state, $ordering_vendor_code);
 
         try {
@@ -516,7 +517,7 @@ class VendorOrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -524,7 +525,7 @@ class VendorOrdersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +533,7 @@ class VendorOrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -540,7 +541,7 @@ class VendorOrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -548,7 +549,7 @@ class VendorOrdersApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -556,7 +557,7 @@ class VendorOrdersApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +565,7 @@ class VendorOrdersApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -572,7 +573,7 @@ class VendorOrdersApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -636,7 +637,7 @@ class VendorOrdersApi
      */
     public function getPurchaseOrdersAsyncWithHttpInfo($limit = null, $created_after = null, $created_before = null, $sort_order = null, $next_token = null, $include_details = null, $changed_after = null, $changed_before = null, $po_item_state = null, $is_po_changed = null, $purchase_order_state = null, $ordering_vendor_code = null)
     {
-        $returnType = '\Swagger\Client\Model\GetPurchaseOrdersResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersResponse';
         $request = $this->getPurchaseOrdersRequest($limit, $created_after, $created_before, $sort_order, $next_token, $include_details, $changed_after, $changed_before, $po_item_state, $is_po_changed, $purchase_order_state, $ordering_vendor_code);
 
         return $this->client
@@ -849,9 +850,9 @@ class VendorOrdersApi
      * @param  string $ordering_vendor_code Filters purchase orders based on the specified ordering vendor code. This value should be same as &#39;sellingParty.partyId&#39; in the purchase order. If not included in filter, all purchase orders for all the vendor codes that exist in the vendor group used to authorize API client application are returned. (optional)
      * @param  string $ship_to_party_id Filters purchase orders for a specific buyer&#39;s Fulfillment Center/warehouse by providing ship to location id here. This value should be same as &#39;shipToParty.partyId&#39; in the purchase order. If not included in filter, this will return purchase orders for all the buyer&#39;s warehouses used for vendor group purchase orders. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetPurchaseOrdersStatusResponse
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse
      */
     public function getPurchaseOrdersStatus($limit = null, $sort_order = null, $next_token = null, $created_after = null, $created_before = null, $updated_after = null, $updated_before = null, $purchase_order_number = null, $purchase_order_status = null, $item_confirmation_status = null, $ordering_vendor_code = null, $ship_to_party_id = null)
     {
@@ -875,13 +876,13 @@ class VendorOrdersApi
      * @param  string $ordering_vendor_code Filters purchase orders based on the specified ordering vendor code. This value should be same as &#39;sellingParty.partyId&#39; in the purchase order. If not included in filter, all purchase orders for all the vendor codes that exist in the vendor group used to authorize API client application are returned. (optional)
      * @param  string $ship_to_party_id Filters purchase orders for a specific buyer&#39;s Fulfillment Center/warehouse by providing ship to location id here. This value should be same as &#39;shipToParty.partyId&#39; in the purchase order. If not included in filter, this will return purchase orders for all the buyer&#39;s warehouses used for vendor group purchase orders. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetPurchaseOrdersStatusResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPurchaseOrdersStatusWithHttpInfo($limit = null, $sort_order = null, $next_token = null, $created_after = null, $created_before = null, $updated_after = null, $updated_before = null, $purchase_order_number = null, $purchase_order_status = null, $item_confirmation_status = null, $ordering_vendor_code = null, $ship_to_party_id = null)
     {
-        $returnType = '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse';
         $request = $this->getPurchaseOrdersStatusRequest($limit, $sort_order, $next_token, $created_after, $created_before, $updated_after, $updated_before, $purchase_order_number, $purchase_order_status, $item_confirmation_status, $ordering_vendor_code, $ship_to_party_id);
 
         try {
@@ -933,7 +934,7 @@ class VendorOrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -941,7 +942,7 @@ class VendorOrdersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -949,7 +950,7 @@ class VendorOrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -957,7 +958,7 @@ class VendorOrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -965,7 +966,7 @@ class VendorOrdersApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -973,7 +974,7 @@ class VendorOrdersApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -981,7 +982,7 @@ class VendorOrdersApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -989,7 +990,7 @@ class VendorOrdersApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1053,7 +1054,7 @@ class VendorOrdersApi
      */
     public function getPurchaseOrdersStatusAsyncWithHttpInfo($limit = null, $sort_order = null, $next_token = null, $created_after = null, $created_before = null, $updated_after = null, $updated_before = null, $purchase_order_number = null, $purchase_order_status = null, $item_confirmation_status = null, $ordering_vendor_code = null, $ship_to_party_id = null)
     {
-        $returnType = '\Swagger\Client\Model\GetPurchaseOrdersStatusResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\GetPurchaseOrdersStatusResponse';
         $request = $this->getPurchaseOrdersStatusRequest($limit, $sort_order, $next_token, $created_after, $created_before, $updated_after, $updated_before, $purchase_order_number, $purchase_order_status, $item_confirmation_status, $ordering_vendor_code, $ship_to_party_id);
 
         return $this->client
@@ -1253,11 +1254,11 @@ class VendorOrdersApi
     /**
      * Operation submitAcknowledgement
      *
-     * @param  \Swagger\Client\Model\SubmitAcknowledgementRequest $body body (required)
+     * @param  \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementRequest $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SubmitAcknowledgementResponse
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse
      */
     public function submitAcknowledgement($body)
     {
@@ -1268,15 +1269,15 @@ class VendorOrdersApi
     /**
      * Operation submitAcknowledgementWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\SubmitAcknowledgementRequest $body (required)
+     * @param  \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementRequest $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ClouSale\AmazonSellingPartnerAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SubmitAcknowledgementResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitAcknowledgementWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SubmitAcknowledgementResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse';
         $request = $this->submitAcknowledgementRequest($body);
 
         try {
@@ -1328,7 +1329,7 @@ class VendorOrdersApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1336,7 +1337,7 @@ class VendorOrdersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1344,7 +1345,7 @@ class VendorOrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1352,7 +1353,7 @@ class VendorOrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1360,7 +1361,7 @@ class VendorOrdersApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1368,7 +1369,7 @@ class VendorOrdersApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1376,7 +1377,7 @@ class VendorOrdersApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1384,7 +1385,7 @@ class VendorOrdersApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1392,7 +1393,7 @@ class VendorOrdersApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubmitAcknowledgementResponse',
+                        '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1407,7 +1408,7 @@ class VendorOrdersApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\SubmitAcknowledgementRequest $body (required)
+     * @param  \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1427,14 +1428,14 @@ class VendorOrdersApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\SubmitAcknowledgementRequest $body (required)
+     * @param  \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function submitAcknowledgementAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SubmitAcknowledgementResponse';
+        $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementResponse';
         $request = $this->submitAcknowledgementRequest($body);
 
         return $this->client
@@ -1477,7 +1478,7 @@ class VendorOrdersApi
     /**
      * Create request for operation 'submitAcknowledgement'
      *
-     * @param  \Swagger\Client\Model\SubmitAcknowledgementRequest $body (required)
+     * @param  \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\SubmitAcknowledgementRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
