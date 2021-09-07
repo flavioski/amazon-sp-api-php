@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SubmitAcknowledgementRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the submitAcknowledgment operation.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +59,7 @@ class SubmitAcknowledgementRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'acknowledgements' => '\Swagger\Client\Model\OrderAcknowledgement[]'
+        'acknowledgements' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderAcknowledgement[]'
     ];
 
     /**
@@ -208,7 +209,7 @@ class SubmitAcknowledgementRequest implements ModelInterface, ArrayAccess
     /**
      * Gets acknowledgements
      *
-     * @return \Swagger\Client\Model\OrderAcknowledgement[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderAcknowledgement[]
      */
     public function getAcknowledgements()
     {
@@ -218,7 +219,7 @@ class SubmitAcknowledgementRequest implements ModelInterface, ArrayAccess
     /**
      * Sets acknowledgements
      *
-     * @param \Swagger\Client\Model\OrderAcknowledgement[] $acknowledgements acknowledgements
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderAcknowledgement[] $acknowledgements acknowledgements
      *
      * @return $this
      */
