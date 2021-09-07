@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use \ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * AcknowledgementStatusDetails Class Doc Comment
  *
  * @category Class
  * @description Details of item quantity ordered
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +60,8 @@ class AcknowledgementStatusDetails implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'acknowledgement_date' => '\DateTime',
-        'accepted_quantity' => '\Swagger\Client\Model\ItemQuantity',
-        'rejected_quantity' => '\Swagger\Client\Model\ItemQuantity'
+        'accepted_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity',
+        'rejected_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity'
     ];
 
     /**
@@ -244,7 +245,7 @@ class AcknowledgementStatusDetails implements ModelInterface, ArrayAccess
     /**
      * Gets accepted_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getAcceptedQuantity()
     {
@@ -254,7 +255,7 @@ class AcknowledgementStatusDetails implements ModelInterface, ArrayAccess
     /**
      * Sets accepted_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $accepted_quantity Item quantity accepted by vendor to be shipped.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $accepted_quantity Item quantity accepted by vendor to be shipped.
      *
      * @return $this
      */
@@ -268,7 +269,7 @@ class AcknowledgementStatusDetails implements ModelInterface, ArrayAccess
     /**
      * Gets rejected_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity
      */
     public function getRejectedQuantity()
     {
@@ -278,7 +279,7 @@ class AcknowledgementStatusDetails implements ModelInterface, ArrayAccess
     /**
      * Sets rejected_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $rejected_quantity Item quantity rejected by vendor.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\ItemQuantity $rejected_quantity Item quantity rejected by vendor.
      *
      * @return $this
      */
