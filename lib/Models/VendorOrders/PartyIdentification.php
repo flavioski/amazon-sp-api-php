@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * PartyIdentification Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +59,8 @@ class PartyIdentification implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'party_id' => 'string',
-        'address' => '\Swagger\Client\Model\Address',
-        'tax_info' => '\Swagger\Client\Model\TaxRegistrationDetails'
+        'address' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Address',
+        'tax_info' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\TaxRegistrationDetails'
     ];
 
     /**
@@ -246,7 +247,7 @@ class PartyIdentification implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Address
      */
     public function getAddress()
     {
@@ -256,7 +257,7 @@ class PartyIdentification implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address Identification of the party by address.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\Address $address Identification of the party by address.
      *
      * @return $this
      */
@@ -270,7 +271,7 @@ class PartyIdentification implements ModelInterface, ArrayAccess
     /**
      * Gets tax_info
      *
-     * @return \Swagger\Client\Model\TaxRegistrationDetails
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\TaxRegistrationDetails
      */
     public function getTaxInfo()
     {
@@ -280,7 +281,7 @@ class PartyIdentification implements ModelInterface, ArrayAccess
     /**
      * Sets tax_info
      *
-     * @param \Swagger\Client\Model\TaxRegistrationDetails $tax_info Tax registration details of the party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\TaxRegistrationDetails $tax_info Tax registration details of the party.
      *
      * @return $this
      */
