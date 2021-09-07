@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +60,7 @@ class Order implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'purchase_order_number' => 'string',
         'purchase_order_state' => 'string',
-        'order_details' => '\Swagger\Client\Model\OrderDetails'
+        'order_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderDetails'
     ];
 
     /**
@@ -307,7 +308,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets order_details
      *
-     * @return \Swagger\Client\Model\OrderDetails
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderDetails
      */
     public function getOrderDetails()
     {
@@ -317,7 +318,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets order_details
      *
-     * @param \Swagger\Client\Model\OrderDetails $order_details Details of an order.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders\OrderDetails $order_details Details of an order.
      *
      * @return $this
      */
