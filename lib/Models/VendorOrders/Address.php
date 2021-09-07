@@ -29,9 +29,9 @@
 
 namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorOrders;
 
-use \ArrayAccess;
+use ArrayAccess;
 use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
-use \ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Address Class Doc Comment
