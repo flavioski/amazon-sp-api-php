@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderDetails Class Doc Comment
  *
  * @category Class
  * @description Details of an order.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,13 +62,13 @@ class OrderDetails implements ModelInterface, ArrayAccess
         'customer_order_number' => 'string',
         'order_date' => '\DateTime',
         'order_status' => 'string',
-        'shipment_details' => '\Swagger\Client\Model\ShipmentDetails',
-        'tax_total' => '\Swagger\Client\Model\OrderDetailsTaxTotal',
-        'selling_party' => '\Swagger\Client\Model\PartyIdentification',
-        'ship_from_party' => '\Swagger\Client\Model\PartyIdentification',
-        'ship_to_party' => '\Swagger\Client\Model\Address',
-        'bill_to_party' => '\Swagger\Client\Model\PartyIdentification',
-        'items' => '\Swagger\Client\Model\OrderItem[]'
+        'shipment_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ShipmentDetails',
+        'tax_total' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderDetailsTaxTotal',
+        'selling_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification',
+        'ship_from_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification',
+        'ship_to_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Address',
+        'bill_to_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification',
+        'items' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItem[]'
     ];
 
     /**
@@ -394,7 +395,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_details
      *
-     * @return \Swagger\Client\Model\ShipmentDetails
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ShipmentDetails
      */
     public function getShipmentDetails()
     {
@@ -404,7 +405,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_details
      *
-     * @param \Swagger\Client\Model\ShipmentDetails $shipment_details shipment_details
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ShipmentDetails $shipment_details shipment_details
      *
      * @return $this
      */
@@ -418,7 +419,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets tax_total
      *
-     * @return \Swagger\Client\Model\OrderDetailsTaxTotal
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderDetailsTaxTotal
      */
     public function getTaxTotal()
     {
@@ -428,7 +429,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets tax_total
      *
-     * @param \Swagger\Client\Model\OrderDetailsTaxTotal $tax_total tax_total
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderDetailsTaxTotal $tax_total tax_total
      *
      * @return $this
      */
@@ -442,7 +443,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets selling_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -452,7 +453,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets selling_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $selling_party PartyID of vendor code.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification $selling_party PartyID of vendor code.
      *
      * @return $this
      */
@@ -466,7 +467,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -476,7 +477,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $ship_from_party PartyID of vendor's warehouse.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification $ship_from_party PartyID of vendor's warehouse.
      *
      * @return $this
      */
@@ -490,7 +491,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets ship_to_party
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Address
      */
     public function getShipToParty()
     {
@@ -500,7 +501,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets ship_to_party
      *
-     * @param \Swagger\Client\Model\Address $ship_to_party Name/Address and tax details of the ship to party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Address $ship_to_party Name/Address and tax details of the ship to party.
      *
      * @return $this
      */
@@ -514,7 +515,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets bill_to_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification
      */
     public function getBillToParty()
     {
@@ -524,7 +525,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets bill_to_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $bill_to_party Name/Address and tax details of the bill to party.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification $bill_to_party Name/Address and tax details of the bill to party.
      *
      * @return $this
      */
@@ -538,7 +539,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\OrderItem[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItem[]
      */
     public function getItems()
     {
@@ -548,7 +549,7 @@ class OrderDetails implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\OrderItem[] $items A list of items in this purchase order.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItem[] $items A list of items in this purchase order.
      *
      * @return $this
      */

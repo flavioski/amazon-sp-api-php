@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderItem Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,12 +62,12 @@ class OrderItem implements ModelInterface, ArrayAccess
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
         'title' => 'string',
-        'ordered_quantity' => '\Swagger\Client\Model\ItemQuantity',
-        'scheduled_delivery_shipment' => '\Swagger\Client\Model\ScheduledDeliveryShipment',
-        'gift_details' => '\Swagger\Client\Model\GiftDetails',
-        'net_price' => '\Swagger\Client\Model\Money',
-        'tax_details' => '\Swagger\Client\Model\OrderItemTaxDetails',
-        'total_price' => '\Swagger\Client\Model\Money'
+        'ordered_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ItemQuantity',
+        'scheduled_delivery_shipment' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ScheduledDeliveryShipment',
+        'gift_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\GiftDetails',
+        'net_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money',
+        'tax_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItemTaxDetails',
+        'total_price' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money'
     ];
 
     /**
@@ -366,7 +367,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets ordered_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ItemQuantity
      */
     public function getOrderedQuantity()
     {
@@ -376,7 +377,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets ordered_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $ordered_quantity Item quantity ordered.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ItemQuantity $ordered_quantity Item quantity ordered.
      *
      * @return $this
      */
@@ -390,7 +391,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets scheduled_delivery_shipment
      *
-     * @return \Swagger\Client\Model\ScheduledDeliveryShipment
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ScheduledDeliveryShipment
      */
     public function getScheduledDeliveryShipment()
     {
@@ -400,7 +401,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets scheduled_delivery_shipment
      *
-     * @param \Swagger\Client\Model\ScheduledDeliveryShipment $scheduled_delivery_shipment Details for the scheduled delivery shipment.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ScheduledDeliveryShipment $scheduled_delivery_shipment Details for the scheduled delivery shipment.
      *
      * @return $this
      */
@@ -414,7 +415,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets gift_details
      *
-     * @return \Swagger\Client\Model\GiftDetails
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\GiftDetails
      */
     public function getGiftDetails()
     {
@@ -424,7 +425,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets gift_details
      *
-     * @param \Swagger\Client\Model\GiftDetails $gift_details Gift message and wrapId details.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\GiftDetails $gift_details Gift message and wrapId details.
      *
      * @return $this
      */
@@ -438,7 +439,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets net_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money
      */
     public function getNetPrice()
     {
@@ -448,7 +449,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets net_price
      *
-     * @param \Swagger\Client\Model\Money $net_price Net price (before tax) to vendor with currency details.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money $net_price Net price (before tax) to vendor with currency details.
      *
      * @return $this
      */
@@ -462,7 +463,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets tax_details
      *
-     * @return \Swagger\Client\Model\OrderItemTaxDetails
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItemTaxDetails
      */
     public function getTaxDetails()
     {
@@ -472,7 +473,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets tax_details
      *
-     * @param \Swagger\Client\Model\OrderItemTaxDetails $tax_details tax_details
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItemTaxDetails $tax_details tax_details
      *
      * @return $this
      */
@@ -486,7 +487,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets total_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money
      */
     public function getTotalPrice()
     {
@@ -496,7 +497,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets total_price
      *
-     * @param \Swagger\Client\Model\Money $total_price The price to Amazon each (cost).
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money $total_price The price to Amazon each (cost).
      *
      * @return $this
      */

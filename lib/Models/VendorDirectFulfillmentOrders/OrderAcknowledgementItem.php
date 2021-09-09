@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderAcknowledgementItem Class Doc Comment
  *
  * @category Class
  * @description Details of an individual order being acknowledged.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,10 +62,10 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
         'purchase_order_number' => 'string',
         'vendor_order_number' => 'string',
         'acknowledgement_date' => '\DateTime',
-        'acknowledgement_status' => '\Swagger\Client\Model\AcknowledgementStatus',
-        'selling_party' => '\Swagger\Client\Model\PartyIdentification',
-        'ship_from_party' => '\Swagger\Client\Model\PartyIdentification',
-        'item_acknowledgements' => '\Swagger\Client\Model\OrderItemAcknowledgement[]'
+        'acknowledgement_status' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\AcknowledgementStatus',
+        'selling_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification',
+        'ship_from_party' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification',
+        'item_acknowledgements' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItemAcknowledgement[]'
     ];
 
     /**
@@ -337,7 +338,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets acknowledgement_status
      *
-     * @return \Swagger\Client\Model\AcknowledgementStatus
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\AcknowledgementStatus
      */
     public function getAcknowledgementStatus()
     {
@@ -347,7 +348,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets acknowledgement_status
      *
-     * @param \Swagger\Client\Model\AcknowledgementStatus $acknowledgement_status Status of acknowledgement.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\AcknowledgementStatus $acknowledgement_status Status of acknowledgement.
      *
      * @return $this
      */
@@ -361,7 +362,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets selling_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -371,7 +372,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets selling_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $selling_party PartyID as vendor code.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification $selling_party PartyID as vendor code.
      *
      * @return $this
      */
@@ -385,7 +386,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_party
      *
-     * @return \Swagger\Client\Model\PartyIdentification
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -395,7 +396,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_party
      *
-     * @param \Swagger\Client\Model\PartyIdentification $ship_from_party PartyID as the vendor's warehouseId.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\PartyIdentification $ship_from_party PartyID as the vendor's warehouseId.
      *
      * @return $this
      */
@@ -409,7 +410,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Gets item_acknowledgements
      *
-     * @return \Swagger\Client\Model\OrderItemAcknowledgement[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItemAcknowledgement[]
      */
     public function getItemAcknowledgements()
     {
@@ -419,7 +420,7 @@ class OrderAcknowledgementItem implements ModelInterface, ArrayAccess
     /**
      * Sets item_acknowledgements
      *
-     * @param \Swagger\Client\Model\OrderItemAcknowledgement[] $item_acknowledgements Item details including acknowledged quantity.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderItemAcknowledgement[] $item_acknowledgements Item details including acknowledged quantity.
      *
      * @return $this
      */

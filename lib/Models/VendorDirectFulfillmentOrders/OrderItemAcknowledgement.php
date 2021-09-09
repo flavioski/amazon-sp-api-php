@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderItemAcknowledgement Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +61,7 @@ class OrderItemAcknowledgement implements ModelInterface, ArrayAccess
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'acknowledged_quantity' => '\Swagger\Client\Model\ItemQuantity'
+        'acknowledged_quantity' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ItemQuantity'
     ];
 
     /**
@@ -303,7 +304,7 @@ class OrderItemAcknowledgement implements ModelInterface, ArrayAccess
     /**
      * Gets acknowledged_quantity
      *
-     * @return \Swagger\Client\Model\ItemQuantity
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ItemQuantity
      */
     public function getAcknowledgedQuantity()
     {
@@ -313,7 +314,7 @@ class OrderItemAcknowledgement implements ModelInterface, ArrayAccess
     /**
      * Sets acknowledged_quantity
      *
-     * @param \Swagger\Client\Model\ItemQuantity $acknowledged_quantity Details of quantity acknowledged with the above acknowledgement code.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ItemQuantity $acknowledged_quantity Details of quantity acknowledged with the above acknowledgement code.
      *
      * @return $this
      */

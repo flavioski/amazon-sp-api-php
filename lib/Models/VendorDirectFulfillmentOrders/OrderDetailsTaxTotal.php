@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * OrderDetailsTaxTotal Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +58,7 @@ class OrderDetailsTaxTotal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tax_line_item' => '\Swagger\Client\Model\TaxLineItem'
+        'tax_line_item' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\TaxLineItem'
     ];
 
     /**
@@ -207,7 +208,7 @@ class OrderDetailsTaxTotal implements ModelInterface, ArrayAccess
     /**
      * Gets tax_line_item
      *
-     * @return \Swagger\Client\Model\TaxLineItem
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\TaxLineItem
      */
     public function getTaxLineItem()
     {
@@ -217,7 +218,7 @@ class OrderDetailsTaxTotal implements ModelInterface, ArrayAccess
     /**
      * Sets tax_line_item
      *
-     * @param \Swagger\Client\Model\TaxLineItem $tax_line_item Tax details.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\TaxLineItem $tax_line_item Tax details.
      *
      * @return $this
      */
