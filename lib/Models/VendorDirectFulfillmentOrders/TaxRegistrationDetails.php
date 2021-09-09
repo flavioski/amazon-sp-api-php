@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * TaxRegistrationDetails Class Doc Comment
  *
  * @category Class
  * @description Tax registration details of the entity.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +61,7 @@ class TaxRegistrationDetails implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'tax_registration_type' => 'string',
         'tax_registration_number' => 'string',
-        'tax_registration_address' => '\Swagger\Client\Model\Address',
+        'tax_registration_address' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Address',
         'tax_registration_messages' => 'string'
     ];
 
@@ -309,7 +310,7 @@ class TaxRegistrationDetails implements ModelInterface, ArrayAccess
     /**
      * Gets tax_registration_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Address
      */
     public function getTaxRegistrationAddress()
     {
@@ -319,7 +320,7 @@ class TaxRegistrationDetails implements ModelInterface, ArrayAccess
     /**
      * Sets tax_registration_address
      *
-     * @param \Swagger\Client\Model\Address $tax_registration_address Address associated with the tax registration number.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Address $tax_registration_address Address associated with the tax registration number.
      *
      * @return $this
      */

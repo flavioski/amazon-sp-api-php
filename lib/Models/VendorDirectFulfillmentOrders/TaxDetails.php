@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * TaxDetails Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,9 +58,9 @@ class TaxDetails implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tax_rate' => '\Swagger\Client\Model\Decimal',
-        'tax_amount' => '\Swagger\Client\Model\Money',
-        'taxable_amount' => '\Swagger\Client\Model\Money',
+        'tax_rate' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Decimal',
+        'tax_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money',
+        'taxable_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money',
         'type' => 'string'
     ];
 
@@ -261,7 +262,7 @@ class TaxDetails implements ModelInterface, ArrayAccess
     /**
      * Gets tax_rate
      *
-     * @return \Swagger\Client\Model\Decimal
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Decimal
      */
     public function getTaxRate()
     {
@@ -271,7 +272,7 @@ class TaxDetails implements ModelInterface, ArrayAccess
     /**
      * Sets tax_rate
      *
-     * @param \Swagger\Client\Model\Decimal $tax_rate tax_rate
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Decimal $tax_rate tax_rate
      *
      * @return $this
      */
@@ -285,7 +286,7 @@ class TaxDetails implements ModelInterface, ArrayAccess
     /**
      * Gets tax_amount
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money
      */
     public function getTaxAmount()
     {
@@ -295,7 +296,7 @@ class TaxDetails implements ModelInterface, ArrayAccess
     /**
      * Sets tax_amount
      *
-     * @param \Swagger\Client\Model\Money $tax_amount tax_amount
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money $tax_amount tax_amount
      *
      * @return $this
      */
@@ -309,7 +310,7 @@ class TaxDetails implements ModelInterface, ArrayAccess
     /**
      * Gets taxable_amount
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money
      */
     public function getTaxableAmount()
     {
@@ -319,7 +320,7 @@ class TaxDetails implements ModelInterface, ArrayAccess
     /**
      * Sets taxable_amount
      *
-     * @param \Swagger\Client\Model\Money $taxable_amount taxable_amount
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Money $taxable_amount taxable_amount
      *
      * @return $this
      */

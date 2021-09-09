@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * Money Class Doc Comment
  *
  * @category Class
  * @description An amount of money, including units in the form of currency.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +60,7 @@ class Money implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'currency_code' => 'string',
-        'amount' => '\Swagger\Client\Model\Decimal'
+        'amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Decimal'
     ];
 
     /**
@@ -238,7 +239,7 @@ class Money implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return \Swagger\Client\Model\Decimal
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Decimal
      */
     public function getAmount()
     {
@@ -248,7 +249,7 @@ class Money implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param \Swagger\Client\Model\Decimal $amount amount
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\Decimal $amount amount
      *
      * @return $this
      */

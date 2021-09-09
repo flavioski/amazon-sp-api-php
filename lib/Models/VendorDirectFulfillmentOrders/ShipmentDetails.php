@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * ShipmentDetails Class Doc Comment
  *
  * @category Class
  * @description Shipment details required for the shipment.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +64,7 @@ class ShipmentDetails implements ModelInterface, ArrayAccess
         'is_pslip_required' => 'bool',
         'is_gift' => 'bool',
         'ship_method' => 'string',
-        'shipment_dates' => '\Swagger\Client\Model\ShipmentDates',
+        'shipment_dates' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ShipmentDates',
         'message_to_customer' => 'string'
     ];
 
@@ -379,7 +380,7 @@ class ShipmentDetails implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_dates
      *
-     * @return \Swagger\Client\Model\ShipmentDates
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ShipmentDates
      */
     public function getShipmentDates()
     {
@@ -389,7 +390,7 @@ class ShipmentDetails implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_dates
      *
-     * @param \Swagger\Client\Model\ShipmentDates $shipment_dates shipment_dates
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\ShipmentDates $shipment_dates shipment_dates
      *
      * @return $this
      */

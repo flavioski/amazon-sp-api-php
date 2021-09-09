@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
+use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
  * SubmitAcknowledgementRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the submitAcknowledgement operation.
- * @package  Swagger\Client
+ * @package  ClouSale\AmazonSellingPartnerAPI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +59,7 @@ class SubmitAcknowledgementRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'order_acknowledgements' => '\Swagger\Client\Model\OrderAcknowledgementItem[]'
+        'order_acknowledgements' => '\ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderAcknowledgementItem[]'
     ];
 
     /**
@@ -208,7 +209,7 @@ class SubmitAcknowledgementRequest implements ModelInterface, ArrayAccess
     /**
      * Gets order_acknowledgements
      *
-     * @return \Swagger\Client\Model\OrderAcknowledgementItem[]
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderAcknowledgementItem[]
      */
     public function getOrderAcknowledgements()
     {
@@ -218,7 +219,7 @@ class SubmitAcknowledgementRequest implements ModelInterface, ArrayAccess
     /**
      * Sets order_acknowledgements
      *
-     * @param \Swagger\Client\Model\OrderAcknowledgementItem[] $order_acknowledgements A list of one or more purchase orders.
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\VendorDirectFulfillmentOrders\OrderAcknowledgementItem[] $order_acknowledgements A list of one or more purchase orders.
      *
      * @return $this
      */
